@@ -1,0 +1,47 @@
+{
+  "STATES": {
+    "INITIALIZATION": 1,
+    "SIMULATION": 2,
+    "RESTART": 3
+  },
+  "COMMANDS": {
+    "QUIT": 0,
+    "MOVE": {
+      "FORWARD": 1,
+      "BACKWARD": 2
+    },
+    "ROTATE": {
+      "CLOCKWISE": 3,
+      "ANTICLOCKWISE": 4
+    },
+    "MAXVALUE": 4
+  },
+  "DIRECTIONS": {
+    "NORTH": 1,
+    "EAST": 2,
+    "SOUTH": 3,
+    "WEST": 4
+  },
+  "OBJECT": {
+    "OUTOFBOX": [-1, -1],
+    "DEFAULTPOSITION": [0, 0]
+  },
+  "BOX": {
+    "DEFAULTSIZE": [4, 4]
+  },
+  "INSTRUCTION": {
+    "INITIALIZATION": "Type the matrix-size and object-position, e.g. WIDTH,HEIGHT,X,Y",
+    "HELPER_MANUAL": [
+      "\n------------------------------------------------------------------------------",
+      "|  Type comma separated simulation commands (e.g. '1,4,1,3,2,3,2,4,1,0'):    |",
+      "|  0 = quit simulation and print results to stdout                           |",
+      "|  1 = move forward one step                                                 |",
+      "|  2 = move backward one step                                                |",
+      "|  3 = rotate clockwise 90 degrees (e.g. NORTH to EAST)                      |",
+      "|  4 = rotate anti-clockwise 90 degrees (e.g. WEST to SOUTH)                 |",
+      "------------------------------------------------------------------------------\n"
+    ],
+    "RESTART": "Press enter to continue...",
+    "ERROR": "Invalid user input, please try again!"
+  }
+}
